@@ -9,8 +9,9 @@ def on_connect(client, userdata, flags, rc):
     print("Connected with code:", rc)
 
 client = mqtt.Client()
-client.on_connect = on_connect
 client.username_pw_set(ACCESS_TOKEN)
+client.on_connect = on_connect
+
 
 client.connect(BROKER, 1883, 60)
 client.loop_start()
