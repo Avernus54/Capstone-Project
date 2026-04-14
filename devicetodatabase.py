@@ -4,7 +4,7 @@ from datetime import datetime
 
 # Supabase project details
 SUPABASE_URL = "https://tycixfmaksnripcyxcwi.supabase.co"
-SUPABASE_API_KEY = "<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR5Y2l4Zm1ha3NucmlwY3l4Y3dpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYxNzI5NTMsImV4cCI6MjA5MTc0ODk1M30.u1e6yG52Tip7vfYbR-08p6JXQsbhiA-QhmCQCrSrlYY>"
+SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR5Y2l4Zm1ha3NucmlwY3l4Y3dpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYxNzI5NTMsImV4cCI6MjA5MTc0ODk1M30.u1e6yG52Tip7vfYbR-08p6JXQsbhiA-QhmCQCrSrlYY"
 
 # Target table endpoint
 endpoint = f"{SUPABASE_URL}/rest/v1/soil_moisture"
