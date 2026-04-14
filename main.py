@@ -3,7 +3,7 @@ import json
 import time
 import random
 
-ACCESS_TOKEN = "94r34Zx3xeDjt0Zu4qJz"
+ACCESS_TOKEN = "zf1ztnuspiiv8jv0u9r9"
 BROKER = "demo.thingsboard.io"  # or your server IP
 
 client = mqtt.Client()
