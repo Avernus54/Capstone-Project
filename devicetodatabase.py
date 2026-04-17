@@ -9,10 +9,23 @@ SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSI
 # Target table endpoint
 endpoint = f"{SUPABASE_URL}/rest/v1/soil_moisture"
 
-# Example soil moisture data
+# Get user input for soil moisture
+device_id = input("Enter device ID (default: raspi-soil-01): ").strip() or "raspi-soil-01"
+moisture_input = input("Enter soil moisture level (0-100): ").strip()
+
+try:
+    moisture_level = float(moisture_input)
+    if not (0 <= moisture_level <= 100):
+        print("Error: Moisture level must be between 0 and 100")
+        exit(1)
+except ValueError:
+    print("Error: Please enter a valid number for moisture level")
+    exit(1)
+
+# Create payload with user input
 payload = {
-    "device_id": "raspi-soil-01",
-    "moisture_level": 42.5,
+    "device_id": device_id,
+    "moisture_level": moisture_level,
     "ts": datetime.utcnow().isoformat()
 }
 
